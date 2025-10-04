@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Official Website</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="un.css">
+
+  <link rel="icon" type="image/x-icon" href="Images/icon.png">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header class="header" id="home">
+    <h1>Innovance</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About <span>Us</span></h2>
+    <img src="Images/title.png" alt="">
+    <p>
+      We are <span>Innovance</span>, a passionate technical team working on software, programming, and innovative projects.
+      Our mission is to learn, build, and innovate together.
+    </p>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h2>Our <span>Team</span></h2>
+    <di class="team-container">
+      <div class="team-card">
+        <img src="Images/Ananthi.jpg" alt="Member">
+        <h3>Ananthi A</h3>
+        <p>Team Leader, Programmer</p>
+        <a href="https://github.com/Ananthipappu"><i class='bx bxl-github'></i></a>
+        <a href=" https://www.linkedin.com/in/ananthi-a-2939b0332"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="team-card">
+        <img src="Images/Ajay.png" alt="Member">
+        <h3>AjayRaj S</h3>
+        <p>Technical Leader, Debugger</p>
+        <a href="https://github.com/AJAYRAJ73"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/sk-ajay-08aba2331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="team-card">
+        <img src="Images/per3.jpg" alt="Member">
+        <h3>Heera A</h3>
+        <p>UI/UX Designer</p>
+        <a href="https://github.com/heera2006"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/heera-anbu-thambi-268ab435b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="team-card">
+        <img src="Images/per2.jpg" alt="Member">
+        <h3>Mahesh M</h3>
+        <p>Programmer</p>
+        <a href=""><i class='bx bxl-github'></i></a>
+        <a href=""><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="team-card">
+        <img src="Images/images.jpeg" alt="Member">
+        <h3>Esakki Rani R</h3>
+        <p>Front end Developer</p>
+        <a href="https://github.com/esakkiraniramanathan2005-sudo"><i class='bx bxl-github'></i></a>
+        <a href=" https://www.linkedin.com/in/esakki-rani-010123308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="team-card">
+        <img src="Images/per4.jpeg" alt="Member">
+        <h3>Kalai Mathavan A</h3>
+        <p>Research & Documentation</p>
+        <a href=""><i class='bx bxl-github'></i></a>
+        <a href=""><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Our <span>Projects</span></h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Website Clone</h3>
+        <p>We built a modern responsive website clone using React and Tailwind.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>An intelligent chatbot made with Python & NLP to assist users.</p>
+      </div>
+      <div class="project-card">
+        <h3>Mobile App</h3>
+        <p>A cross-platform app built with Flutter for productivity tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact <span>Us</span></h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 Innovance | Built with ❤</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Contact Form Script
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message").value;
+
+      alert("Thank you " + name + "! Your message has been received.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
